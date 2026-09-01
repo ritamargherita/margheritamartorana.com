@@ -139,6 +139,10 @@
 
 .focus-grid {
   gap: 1.25rem;
+
+  @media (min-width: $on-laptop) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .focus-card {
@@ -245,5 +249,37 @@
     border-top: 1px solid $border-color;
     color: $muted-text-color;
     padding-top: .75rem;
+  }
+}
+
+.about-grid .section-heading {
+  max-width: 48rem;
+
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: $space-lg;
+
+  @media (min-width: $on-laptop) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.skill-group {
+  border-top: 1px solid $border-color;
+  padding-top: 1.15rem;
+
+  h3 {
+    font-size: 1.05rem;
+  }
+
+  p {
+    color: $muted-text-color;
+    margin: .65rem 0 0;
   }
 }
