@@ -1,0 +1,62 @@
+- title: "An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics"
+  authors: "Margherita Martorana, Francesca Urgese, Ilaria Tiddi, Stefan Schlobach"
+  year: 2025
+  venue: "Preprint"
+  url: "https://arxiv.org/abs/2509.22434"
+  selected: true
+
+- title: "Bridging Bots: from Perception to Action via Multimodal-LMs and Knowledge Graphs"
+  authors: "Margherita Martorana, Francesca Urgese, Mark Adamik, Ilaria Tiddi"
+  year: 2025
+  venue: "19th Conference on Neurosymbolic Learning and Reasoning (NeSy 2025), Proceedings of Machine Learning Research, Vol. 284"
+  url: "https://proceedings.mlr.press/v284/martorana25a.html"
+  selected: true
+
+- title: "Metadata-driven Table Union Search: Leveraging Semantics for Restricted Access Data Integration"
+  authors: "Margherita Martorana, Tobias Kuhn, Jacco van Ossenbruggen"
+  year: 2025
+  venue: "Preprint"
+  url: "https://arxiv.org/abs/2502.20945"
+  selected: true
+
+- title: "Zero-Shot Topic Classification of Column Headers: Leveraging LLMs for Metadata Enrichment"
+  authors: "Margherita Martorana, Tobias Kuhn, Lise Stork, Jacco van Ossenbruggen"
+  year: 2024
+  venue: "Knowledge Graphs in the Age of Language Models and Neuro-Symbolic AI, SEMANTiCS 2024"
+  url: "https://doi.org/10.3233/SSW240006"
+  selected: true
+
+- title: "Column Vocabulary Association (CVA): Semantic Interpretation of Dataless Tables"
+  authors: "Margherita Martorana, Xueli Pan, Benno Kruit, Tobias Kuhn, Jacco van Ossenbruggen"
+  year: 2024
+  venue: "SemTab 2024, co-located with ISWC 2024"
+  url: "https://ceur-ws.org/Vol-3889/paper2.pdf"
+  selected: false
+
+- title: "Closed-Source vs Open-Source RAGs: lessons learned from the SemTab challenge"
+  authors: "Margherita Martorana, Xueli Pan, Benno Kruit, Tobias Kuhn, Jacco van Ossenbruggen"
+  year: 2024
+  venue: "SemTab 2024, co-located with ISWC 2024"
+  url: "https://2024.rage-kg.org/papers/RAGE-KG_2024_paper_2.pdf"
+  selected: false
+
+- title: "Advancing data sharing and reusability for restricted access data on the Web: introducing the DataSet-Variable Ontology"
+  authors: "Margherita Martorana, Tobias Kuhn, Ronald Siebes, Jacco van Ossenbruggen"
+  year: 2023
+  venue: "K-CAP '23: 12th Knowledge Capture Conference"
+  url: "https://dl.acm.org/doi/pdf/10.1145/3587259.3627559"
+  selected: false
+
+- title: "Aligning restricted access data with FAIR: a systematic review"
+  authors: "Margherita Martorana, Tobias Kuhn, Ronald Siebes, Jacco van Ossenbruggen"
+  year: 2022
+  venue: "PeerJ Computer Science, 8:e1038"
+  url: "https://doi.org/10.7717/peerj-cs.1038"
+  selected: false
+
+- title: "Analysing the Evolution of Community-Driven (Sub-)Schemas within Wikidata"
+  authors: "Sofia Baroncini, Margherita Martorana, Mario Scrocca, Zuzanna Śmiech, Axel Polleres"
+  year: 2022
+  venue: "3rd Wikidata Workshop, co-located with ISWC 2022"
+  url: "https://ceur-ws.org/Vol-3262/paper5.pdf"
+  selected: false

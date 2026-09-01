@@ -41,8 +41,9 @@ layout: default
           reusable and actionable across domains.
         </p>
         <div class="button-row" aria-label="Primary actions">
-          <a class="button button--primary" href="#selected-projects">Explore my work</a>
-          <a class="button button--secondary" href="#research-publications">Publications</a>
+          <a class="button button--primary" href="{{ '/#selected-projects' | relative_url }}">Explore my work</a>
+          <a class="button button--secondary" href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a class="button button--secondary" href="{{ '/assets/files/margherita-cv.pdf' | relative_url }}" download>Download CV</a>
         </div>
         <div class="link-row" aria-label="Profile links">
           <a href="#contact">LinkedIn</a>
@@ -52,8 +53,8 @@ layout: default
         </div>
       </div>
 
-      <div class="hero__portrait" aria-hidden="true">
-        <div class="hero__portrait-placeholder"></div>
+      <div class="hero__portrait">
+        <img src="{{ '/assets/images/margherita.jpg' | relative_url }}" alt="Portrait of Margherita Martorana">
       </div>
     </div>
   </section>
@@ -88,6 +89,44 @@ layout: default
           <p>Developing knowledge-driven solutions across domains including robotics, clinical operations, research data and other complex information environments.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section section--compact" id="research-publications" aria-labelledby="research-title">
+    <div class="container">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow">Selected publications</p>
+        <h2 id="research-title">Selected Publications</h2>
+        <p>A compact selection of publications across robotics, semantic technologies and restricted-access data integration.</p>
+      </div>
+
+      <div class="publication-list">
+        {% assign selected_publications = site.data.publications | where: "selected", true %}
+        {% for publication in selected_publications %}
+          <article class="publication-item">
+            <div>
+              <h3>{{ publication.title }}</h3>
+              <p>{{ publication.authors }} / {{ publication.venue }} / {{ publication.year }}</p>
+            </div>
+            <div class="publication-links" aria-label="Publication links">
+              {% if publication.doi %}
+                <a href="{{ publication.doi }}">DOI</a>
+              {% endif %}
+              {% if publication.pdf %}
+                <a href="{{ publication.pdf }}">PDF</a>
+              {% endif %}
+              {% if publication.code %}
+                <a href="{{ publication.code }}">Code</a>
+              {% endif %}
+              {% if publication.url %}
+                <a href="{{ publication.url }}">Publication</a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <a class="section-link" href="{{ '/publications/' | relative_url }}">View all publications -&gt;</a>
     </div>
   </section>
 
@@ -143,46 +182,6 @@ layout: default
             <span>Metadata</span>
           </div>
           <a class="card-link" href="#">View project -&gt;</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--compact" id="research-publications" aria-labelledby="research-title">
-    <div class="container">
-      <div class="section-heading section-heading--wide">
-        <p class="eyebrow">Research</p>
-        <h2 id="research-title">Research &amp; Publications</h2>
-        <p>Placeholder area for publications, preprints, talks, datasets, or research notes.</p>
-      </div>
-
-      <div class="publication-list">
-        <article class="publication-item">
-          <h3>Publication title placeholder</h3>
-          <p>Authors / venue / year placeholder.</p>
-          <div class="publication-links">
-            <a href="#">DOI</a>
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
-          </div>
-        </article>
-        <article class="publication-item">
-          <h3>Publication title placeholder</h3>
-          <p>Authors / venue / year placeholder.</p>
-          <div class="publication-links">
-            <a href="#">DOI</a>
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
-          </div>
-        </article>
-        <article class="publication-item">
-          <h3>Publication title placeholder</h3>
-          <p>Authors / venue / year placeholder.</p>
-          <div class="publication-links">
-            <a href="#">DOI</a>
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
-          </div>
         </article>
       </div>
     </div>

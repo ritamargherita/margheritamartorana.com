@@ -5,13 +5,13 @@
   url: /#research-publications
 
 - title: Publications
-  url: /#research-publications
+  url: /publications/
 
 - title: About
   url: /#about
 
 - title: CV
-  url: /#background
+  url: /assets/files/margherita-cv.pdf
 
 - title: Contact
   url: /#contact

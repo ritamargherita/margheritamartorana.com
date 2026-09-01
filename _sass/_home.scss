@@ -92,35 +92,47 @@
 
 .hero__portrait {
   align-self: center;
-  display: none;
-  justify-self: end;
-  max-width: 20rem;
+  justify-self: start;
+  max-width: 18rem;
   position: relative;
-  width: 100%;
+  width: 72%;
   z-index: 2;
 
+  @media (min-width: $on-tablet) {
+    width: 52%;
+  }
+
   @media (min-width: $on-laptop) {
-    display: block;
+    justify-self: end;
+    max-width: 20rem;
+    width: 100%;
   }
 }
 
-.hero__portrait-placeholder {
+.hero__portrait img {
   aspect-ratio: 4 / 5;
-  background: rgba($surface-color, .55);
-  border: 1px solid rgba($border-color, .9);
+  border: 1px solid rgba($border-color, .95);
   border-radius: $radius-lg;
+  display: block;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
   position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
-.hero__portrait-placeholder::after {
+.hero__portrait::before {
   border: 1px solid rgba($accent-color, .18);
-  border-radius: inherit;
-  bottom: .75rem;
+  border-radius: $radius-lg;
+  bottom: -.75rem;
   content: "";
   left: .75rem;
   position: absolute;
-  right: .75rem;
+  right: -.75rem;
   top: .75rem;
+  z-index: 1;
 }
 
 .hero__network {
@@ -324,5 +336,19 @@
   p {
     color: $muted-text-color;
     margin: .65rem 0 0;
+  }
+}
+
+.section-link {
+  color: $accent-color;
+  display: inline-flex;
+  font-weight: 800;
+  margin-top: $space-md;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-underline-offset: .25rem;
   }
 }
