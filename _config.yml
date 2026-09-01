@@ -7,8 +7,8 @@ email: m.martorana@ik.me
 description: >-
   Margherita Martorana writes about AI, robotics, neurosymbolic systems, knowledge graphs, ontologies, LLMs, and multimodal models.
 
-baseurl: "/barks.n.bytes"
-url: "https://ritamargherita.github.io"
+baseurl: ""
+url: "https://margheritamartorana.com"
 github_username: ritamargherita
 
 # Optional but useful for SEO plugins / themes
