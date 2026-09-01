@@ -1,0 +1,139 @@
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $container-width;
+  padding: 0 $space-md;
+  width: 100%;
+
+  @media (min-width: $on-tablet) {
+    padding: 0 $space-lg;
+  }
+}
+
+.container--narrow {
+  max-width: $narrow-width;
+}
+
+.section {
+  padding: $space-xl 0;
+
+  @media (min-width: $on-tablet) {
+    padding: $space-xxl 0;
+  }
+}
+
+.section--muted {
+  background: rgba($light-accent-color, .42);
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+}
+
+.section-heading {
+  max-width: 42rem;
+  margin-bottom: $space-lg;
+
+  p {
+    color: $muted-text-color;
+    margin: $space-sm 0 0;
+  }
+}
+
+.eyebrow {
+  color: $accent-color;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin: 0 0 $space-sm;
+  text-transform: uppercase;
+}
+
+.button-row,
+.link-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: .95rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 2.875rem;
+  padding: .65rem 1.1rem;
+  text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.button--primary {
+  background: $accent-color;
+  border-color: $accent-color;
+  color: $surface-color;
+
+  &:hover,
+  &:focus {
+    background: darken($accent-color, 6%);
+    border-color: darken($accent-color, 6%);
+  }
+}
+
+.button--secondary {
+  background: transparent;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    background: $highlight;
+    border-color: rgba($accent-color, .45);
+  }
+}
+
+.card-grid {
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $on-tablet) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card-grid--three {
+  @media (min-width: $on-laptop) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card,
+.callout {
+  background: rgba($surface-color, .78);
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  box-sizing: border-box;
+  padding: $space-md;
+}
+
+.card {
+  min-height: 12rem;
+
+  p {
+    color: $muted-text-color;
+    margin: $space-sm 0 0;
+  }
+}
+
+.card__meta {
+  color: $accent-color !important;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin: 0 0 $space-sm !important;
+  text-transform: uppercase;
+}
+
+.callout {
+  color: $muted-text-color;
+}

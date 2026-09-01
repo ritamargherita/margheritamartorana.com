@@ -2,46 +2,50 @@ body {
   background: $brand-color;
   color: $text-color;
   font-family: $font-family;
-  font-size: 1.3125em;
-  line-height: 1.5;
+  font-size: 1.0625em;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+  font-family: $heading-font-family;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 h1 {
-  font-size: 3em;
-  margin: .5em auto;
+  font-size: clamp(3rem, 9vw, 6.75rem);
+  line-height: .95;
+  margin: 0;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 1em auto;
-  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  margin: 0;
 }
 
 h3 {
-  font-size: 1.5em;
-  margin: 1.3333em auto;
-  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 0;
 }
 
 h4 {
-  font-size: 1.25em;
-  font-style: italic;
-  margin: 1.875em auto;
-  text-align: center;
+  font-size: 1.15rem;
+  margin: 0;
 }
 
-h5 {
-  font-size: 1em;
-  font-style: italic;
-  margin: 2em auto;
-  text-align: center;
-}
-
+h5,
 h6 {
-  font-size: .875em;
-  font-style: italic;
-  margin: 2.25em auto;
-  text-align: center;
+  font-size: 1rem;
+  margin: 0;
 }
 
 em {
@@ -49,23 +53,23 @@ em {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 a {
-  color: $text-color;
+  color: inherit;
 }
 
 a:focus {
-  outline: 1px dashed $text-color;
+  outline: 2px solid rgba($accent-color, .45);
+  outline-offset: .2rem;
 }
 
 blockquote {
+  border-left: 3px solid $light-accent-color;
+  color: $muted-text-color;
   margin: 2em auto;
-  opacity: .8;
-  > * {
-    padding: 0 3em;
-  }
+  padding-left: 1.25em;
 }
 
 blockquote.epigraph {
@@ -83,16 +87,16 @@ p > cite {
 
 hr {
   border: 0;
+  border-top: 1px solid $border-color;
   height: 0;
-  @include divider;
   margin: 4em 0;
 }
 
 img {
   display: flex;
-  max-width: 100%;
   height: auto;
   margin: 2em auto;
+  max-width: 100%;
 }
 
 figure img {
@@ -100,21 +104,24 @@ figure img {
 }
 
 figcaption {
+  color: $muted-text-color;
   font-size: .875em;
-  font-style: italic;
-  text-align: center;
   margin-bottom: 2em;
-  opacity: .7;
+  text-align: center;
 }
 
 .divided::after {
+  background: $accent-color;
   content: "";
-  @include divider;
+  display: block;
+  height: 2px;
+  margin: .75em auto 0;
+  width: 4rem;
 }
 
 .home {
-  max-width: 24em;
   margin: auto;
+  max-width: 24em;
   padding: 4em 1em;
 }
 
@@ -128,21 +135,23 @@ figcaption {
   color: $muted-text-color;
   display: block;
   font-size: .825em;
-  white-space: nowrap;
   text-transform: uppercase;
+  white-space: nowrap;
+
   .post-link & {
     padding: .5em 0;
   }
 }
 
 .site-credits {
+  color: $muted-text-color;
   margin: 0 auto 2em;
   padding: 0 2em;
   text-align: center;
 }
 
 .skip-navigation {
-  background: $brand-color;
+  background: $surface-color;
   border: 1px dashed transparent;
   display: block;
   font-size: .875em;
@@ -152,10 +161,10 @@ figcaption {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover,
   &:focus {
-    background: lighten($brand-color, 2.5%);
-    border-color: $text-color;
+    border-color: $accent-color;
     margin-top: 0;
   }
 }

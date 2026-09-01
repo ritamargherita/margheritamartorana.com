@@ -2,90 +2,129 @@
 layout: default
 ---
 
-{% if site.data.menu and site.paginate and site.paginate_path and paginator.page > 1 %}
+<header class="site-header">
   {% include menu.html %}
-{% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
-  {% include back-link.html %}
-{% else %}
-  <header class="site-masthead">
-    {% include menu.html %}
+</header>
 
-    {% assign home_title = page.home_title | default: site.title %}
-    {% assign home_subtitle = page.home_subtitle | default: site.subtitle %}
-    {% assign home_description = page.home_description | default: site.description %}
-
-    {% if home_title %}
-      <h1>
-        {{ home_title }}
-      </h1>
-    {% endif %}
-
-    {% if home_subtitle %}
-      <h2>
-        {{ home_subtitle }}
-      </h2>
-    {% endif %}
-
-    {% if home_description %}
-      <p class="site-description">
-        {{ home_description }}
-      </p>
-    {% endif %}
-
-    {% if page.home_signature %}
-      <p class="site-signature">
-        <strong>{{ page.home_signature }}</strong><sup>*</sup><br>
-        <small class="site-footnote">*{{ page.home_footnote }}</small>
-      </p>
-    {% endif %}
-
-  </header>
-{% endif %}
-
-<main class="home" id="main" role="main" aria-label="Content">
-
-  <h1 class="content-title divided">
-    {% if site.paginate and site.paginate_path and paginator.page > 1 %}
-      Page {{ paginator.page }}
-    {% else %}
-      Contents
-    {% endif %}
-  </h1>
-
-  {% if site.paginate and site.paginate_path %}
-
-    <ul class="post-list">
-      {% for post in paginator.posts %}
-        {% include post-list-item.html %}
-      {% endfor %}
-    </ul>
-
-    {% if paginator.total_pages > 1 %}
-
-      <div class="post-pagination">
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-next btn">&lang;&nbsp;Older</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
-        <span class="pagination-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
+<main class="home-page" id="main" role="main" aria-label="Content">
+  <section class="hero section section--hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">Research and technical practice</p>
+        <h1 id="hero-title">Margherita Martorana</h1>
+        <p class="hero__role">AI &amp; Data Scientist</p>
+        <p class="hero__focus">Neurosymbolic AI / Knowledge Graphs &amp; Ontologies</p>
+        <p class="hero__summary">
+          Placeholder introduction for work at the intersection of data, semantics,
+          and AI systems that combine learning with structured knowledge.
+        </p>
+        <div class="button-row" aria-label="Primary actions">
+          <a class="button button--primary" href="#selected-projects">View my work</a>
+          <a class="button button--secondary" href="#research-publications">Publications</a>
+        </div>
+        <div class="link-row" aria-label="Profile links">
+          <a href="#contact">LinkedIn</a>
+          <a href="#contact">GitHub</a>
+        </div>
       </div>
 
-    {% endif %}
+      <div class="hero__visual" aria-hidden="true">
+        <span class="network-node network-node--one"></span>
+        <span class="network-node network-node--two"></span>
+        <span class="network-node network-node--three"></span>
+        <span class="network-node network-node--four"></span>
+        <span class="network-line network-line--one"></span>
+        <span class="network-line network-line--two"></span>
+        <span class="network-line network-line--three"></span>
+      </div>
+    </div>
+  </section>
 
-  {% else %}
+  <section class="section" id="what-i-work-on" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Focus areas</p>
+        <h2 id="work-title">What I Work On</h2>
+        <p>Short placeholder descriptions for the themes this site will highlight.</p>
+      </div>
 
-    <ul class="post-list">
-      {% for post in site.posts %}
-        {% include post-list-item.html %}
-      {% endfor %}
-    </ul>
+      <div class="card-grid card-grid--three">
+        <article class="card">
+          <h3>Neurosymbolic AI</h3>
+          <p>Placeholder for hybrid approaches that connect learning, logic, and reasoning.</p>
+        </article>
+        <article class="card">
+          <h3>Knowledge Graphs</h3>
+          <p>Placeholder for graph-based data modelling, integration, and knowledge representation.</p>
+        </article>
+        <article class="card">
+          <h3>Ontologies &amp; Semantic AI</h3>
+          <p>Placeholder for semantic technologies, vocabularies, and structured AI systems.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  {% endif %}
+  <section class="section section--muted" id="selected-projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="projects-title">Selected Projects</h2>
+        <p>Temporary project cards. Final project names and details can be added later.</p>
+      </div>
 
+      <div class="card-grid">
+        <article class="card project-card">
+          <p class="card__meta">Project placeholder</p>
+          <h3>Project title</h3>
+          <p>Brief placeholder for a selected project summary, role, and outcome.</p>
+        </article>
+        <article class="card project-card">
+          <p class="card__meta">Project placeholder</p>
+          <h3>Project title</h3>
+          <p>Brief placeholder for a selected project summary, role, and outcome.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research-publications" aria-labelledby="research-title">
+    <div class="container container--narrow">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2 id="research-title">Research &amp; Publications</h2>
+        <p>Placeholder area for publications, preprints, talks, datasets, or research notes.</p>
+      </div>
+
+      <div class="callout">
+        <p>Publication entries will be added here once the final list is selected.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted" id="about" aria-labelledby="about-title">
+    <div class="container container--narrow">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">About</h2>
+        <p>Short professional biography placeholder. Final background and current work details can be added later.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container container--narrow">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Contact</h2>
+        <p>Placeholder for email, LinkedIn, GitHub, and other professional contact links.</p>
+      </div>
+
+      <div class="button-row">
+        <a class="button button--primary" href="mailto:{{ site.email }}">Email</a>
+        <a class="button button--secondary" href="#">LinkedIn</a>
+        <a class="button button--secondary" href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
 </main>

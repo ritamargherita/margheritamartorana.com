@@ -1,0 +1,148 @@
+.site-header {
+  padding-top: $space-sm;
+}
+
+.home-page {
+  overflow: hidden;
+}
+
+.section--hero {
+  padding-top: $space-lg;
+
+  @media (min-width: $on-tablet) {
+    min-height: 72vh;
+    padding-top: $space-xl;
+  }
+}
+
+.hero__grid {
+  align-items: center;
+  display: grid;
+  gap: $space-xl;
+
+  @media (min-width: $on-laptop) {
+    grid-template-columns: minmax(0, 1.05fr) minmax(20rem, .95fr);
+  }
+}
+
+.hero__content {
+  max-width: 48rem;
+}
+
+.hero__role {
+  color: $text-color;
+  font-size: clamp(1.8rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: $space-md 0 0;
+}
+
+.hero__focus {
+  color: $accent-color;
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: $space-sm 0 0;
+}
+
+.hero__summary {
+  color: $muted-text-color;
+  font-size: 1.08rem;
+  margin: $space-md 0;
+  max-width: 38rem;
+}
+
+.link-row {
+  margin-top: $space-md;
+
+  a {
+    color: $muted-text-color;
+    font-size: .95rem;
+    font-weight: 700;
+    text-decoration-color: rgba($accent-color, .35);
+    text-underline-offset: .24rem;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.hero__visual {
+  aspect-ratio: 1;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  display: none;
+  position: relative;
+
+  @media (min-width: $on-laptop) {
+    display: block;
+  }
+}
+
+.network-node,
+.network-line {
+  position: absolute;
+}
+
+.network-node {
+  background: $surface-color;
+  border: 1px solid rgba($accent-color, .5);
+  border-radius: 999px;
+  height: .9rem;
+  width: .9rem;
+  z-index: 2;
+}
+
+.network-node--one {
+  left: 18%;
+  top: 22%;
+}
+
+.network-node--two {
+  right: 20%;
+  top: 30%;
+}
+
+.network-node--three {
+  bottom: 24%;
+  left: 30%;
+}
+
+.network-node--four {
+  bottom: 18%;
+  right: 26%;
+}
+
+.network-line {
+  background: rgba($accent-color, .26);
+  height: 1px;
+  transform-origin: left center;
+  z-index: 1;
+}
+
+.network-line--one {
+  left: 20%;
+  top: 24%;
+  transform: rotate(12deg);
+  width: 58%;
+}
+
+.network-line--two {
+  left: 31%;
+  top: 32%;
+  transform: rotate(72deg);
+  width: 41%;
+}
+
+.network-line--three {
+  left: 32%;
+  bottom: 25%;
+  transform: rotate(-8deg);
+  width: 42%;
+}
+
+.project-card {
+  min-height: 14rem;
+}
