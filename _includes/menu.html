@@ -1,21 +1,21 @@
 {% assign menu = site.data.menu %}
 
 {% if menu %}
-  <nav class="site-navigation" role="navigation">
-    <ul>
-      <li>
-        <a href="{{ '/' | relative_url }}">
-          Home
-        </a>
-      </li>
+  <nav class="site-navigation" role="navigation" aria-label="Primary navigation">
+    <a class="site-navigation__identity" href="{{ '/' | relative_url }}" aria-label="Margherita Martorana home">
+      <span class="site-navigation__monogram">MM</span>
+      <span class="site-navigation__name">Margherita Martorana</span>
+    </a>
+
+    <ul class="site-navigation__links">
     {% for item in site.data.menu %}
       <li {% if page.url == item.url %}class="active"{% endif %}>
         {% if item.url contains 'http' %}
-          <a href="{{ item.url }}">
+          <a {% if item.cta %}class="site-navigation__cta"{% endif %} href="{{ item.url }}">
             {{ item.title }}
           </a>
         {% else %}
-          <a href="{{ item.url | relative_url }}">
+          <a {% if item.cta %}class="site-navigation__cta"{% endif %} href="{{ item.url | relative_url }}">
             {{ item.title }}
           </a>
         {% endif %}

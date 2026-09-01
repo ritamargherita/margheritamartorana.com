@@ -33,31 +33,44 @@ layout: default
         <span class="network-node network-node--two"></span>
         <span class="network-node network-node--three"></span>
         <span class="network-node network-node--four"></span>
+        <span class="network-node network-node--five"></span>
+        <span class="network-node network-node--six"></span>
+        <span class="network-node network-node--seven"></span>
+        <span class="network-node network-node--eight"></span>
         <span class="network-line network-line--one"></span>
         <span class="network-line network-line--two"></span>
         <span class="network-line network-line--three"></span>
+        <span class="network-line network-line--four"></span>
+        <span class="network-line network-line--five"></span>
+        <span class="network-line network-line--six"></span>
+        <span class="network-label network-label--one">KG</span>
+        <span class="network-label network-label--two">OWL</span>
+        <span class="network-label network-label--three">AI</span>
       </div>
     </div>
   </section>
 
-  <section class="section" id="what-i-work-on" aria-labelledby="work-title">
+  <section class="section section--compact" id="what-i-work-on" aria-labelledby="work-title">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading section-heading--wide">
         <p class="eyebrow">Focus areas</p>
         <h2 id="work-title">What I Work On</h2>
         <p>Short placeholder descriptions for the themes this site will highlight.</p>
       </div>
 
-      <div class="card-grid card-grid--three">
-        <article class="card">
+      <div class="card-grid card-grid--three focus-grid">
+        <article class="card focus-card">
+          <p class="card__meta">Focus area</p>
           <h3>Neurosymbolic AI</h3>
           <p>Placeholder for hybrid approaches that connect learning, logic, and reasoning.</p>
         </article>
-        <article class="card">
+        <article class="card focus-card">
+          <p class="card__meta">Focus area</p>
           <h3>Knowledge Graphs</h3>
           <p>Placeholder for graph-based data modelling, integration, and knowledge representation.</p>
         </article>
-        <article class="card">
+        <article class="card focus-card">
+          <p class="card__meta">Focus area</p>
           <h3>Ontologies &amp; Semantic AI</h3>
           <p>Placeholder for semantic technologies, vocabularies, and structured AI systems.</p>
         </article>
@@ -65,54 +78,102 @@ layout: default
     </div>
   </section>
 
-  <section class="section section--muted" id="selected-projects" aria-labelledby="projects-title">
+  <section class="section projects-section" id="selected-projects" aria-labelledby="projects-title">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading section-heading--wide">
         <p class="eyebrow">Portfolio</p>
         <h2 id="projects-title">Selected Projects</h2>
         <p>Temporary project cards. Final project names and details can be added later.</p>
       </div>
 
-      <div class="card-grid">
+      <div class="card-grid project-grid">
         <article class="card project-card">
-          <p class="card__meta">Project placeholder</p>
+          <p class="card__meta">Project category</p>
           <h3>Project title</h3>
           <p>Brief placeholder for a selected project summary, role, and outcome.</p>
+          <div class="tag-row" aria-label="Project topics">
+            <span>Topic</span>
+            <span>Method</span>
+            <span>Tool</span>
+          </div>
+          <a class="card-link" href="#">View project -&gt;</a>
         </article>
         <article class="card project-card">
-          <p class="card__meta">Project placeholder</p>
+          <p class="card__meta">Project category</p>
           <h3>Project title</h3>
           <p>Brief placeholder for a selected project summary, role, and outcome.</p>
+          <div class="tag-row" aria-label="Project topics">
+            <span>Topic</span>
+            <span>Method</span>
+            <span>Tool</span>
+          </div>
+          <a class="card-link" href="#">View project -&gt;</a>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="research-publications" aria-labelledby="research-title">
-    <div class="container container--narrow">
-      <div class="section-heading">
+  <section class="section section--compact" id="research-publications" aria-labelledby="research-title">
+    <div class="container">
+      <div class="section-heading section-heading--wide">
         <p class="eyebrow">Research</p>
         <h2 id="research-title">Research &amp; Publications</h2>
         <p>Placeholder area for publications, preprints, talks, datasets, or research notes.</p>
       </div>
 
-      <div class="callout">
-        <p>Publication entries will be added here once the final list is selected.</p>
+      <div class="publication-list">
+        <article class="publication-item">
+          <h3>Publication title placeholder</h3>
+          <p>Authors / venue / year placeholder.</p>
+          <div class="publication-links">
+            <a href="#">DOI</a>
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+          </div>
+        </article>
+        <article class="publication-item">
+          <h3>Publication title placeholder</h3>
+          <p>Authors / venue / year placeholder.</p>
+          <div class="publication-links">
+            <a href="#">DOI</a>
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+          </div>
+        </article>
+        <article class="publication-item">
+          <h3>Publication title placeholder</h3>
+          <p>Authors / venue / year placeholder.</p>
+          <div class="publication-links">
+            <a href="#">DOI</a>
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section section--muted" id="about" aria-labelledby="about-title">
-    <div class="container container--narrow">
+  <section class="section about-section" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
       <div class="section-heading">
         <p class="eyebrow">About</p>
         <h2 id="about-title">About</h2>
         <p>Short professional biography placeholder. Final background and current work details can be added later.</p>
       </div>
+
+      <aside class="expertise-panel" aria-label="Research interests and expertise">
+        <p class="card__meta">Areas to detail later</p>
+        <ul>
+          <li>Research interest placeholder</li>
+          <li>Technology placeholder</li>
+          <li>Expertise area placeholder</li>
+          <li>Methodology placeholder</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <section class="section" id="contact" aria-labelledby="contact-title">
+  <section class="section section--compact" id="contact" aria-labelledby="contact-title">
     <div class="container container--narrow">
       <div class="section-heading">
         <p class="eyebrow">Contact</p>

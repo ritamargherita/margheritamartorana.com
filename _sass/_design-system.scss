@@ -15,17 +15,19 @@
 }
 
 .section {
-  padding: $space-xl 0;
+  padding: 4.5rem 0;
 
   @media (min-width: $on-tablet) {
-    padding: $space-xxl 0;
+    padding: 5.5rem 0;
   }
 }
 
-.section--muted {
-  background: rgba($light-accent-color, .42);
-  border-bottom: 1px solid $border-color;
-  border-top: 1px solid $border-color;
+.section--compact {
+  padding: 3.75rem 0;
+
+  @media (min-width: $on-tablet) {
+    padding: 4.75rem 0;
+  }
 }
 
 .section-heading {
@@ -36,6 +38,10 @@
     color: $muted-text-color;
     margin: $space-sm 0 0;
   }
+}
+
+.section-heading--wide {
+  max-width: 54rem;
 }
 
 .eyebrow {
@@ -109,11 +115,11 @@
 
 .card,
 .callout {
-  background: rgba($surface-color, .78);
+  background: rgba($surface-color, .84);
   border: 1px solid $border-color;
   border-radius: $radius-md;
   box-sizing: border-box;
-  padding: $space-md;
+  padding: 1.75rem;
 }
 
 .card {
@@ -127,11 +133,44 @@
 
 .card__meta {
   color: $accent-color !important;
-  font-size: .78rem;
-  font-weight: 700;
+  font-size: .76rem;
+  font-weight: 800;
   letter-spacing: .08em;
   margin: 0 0 $space-sm !important;
   text-transform: uppercase;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: auto;
+  padding-top: $space-md;
+
+  span {
+    background: $light-accent-color;
+    border: 1px solid rgba($accent-color, .16);
+    border-radius: 999px;
+    color: $accent-color;
+    font-size: .78rem;
+    font-weight: 700;
+    padding: .25rem .55rem;
+  }
+}
+
+.card-link {
+  color: $accent-color;
+  display: inline-flex;
+  font-size: .95rem;
+  font-weight: 800;
+  margin-top: $space-md;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+  }
 }
 
 .callout {

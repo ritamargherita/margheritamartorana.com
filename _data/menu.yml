@@ -1,8 +1,18 @@
+- title: Work
+  url: /#what-i-work-on
+
+- title: Research
+  url: /#research-publications
+
+- title: Publications
+  url: /#research-publications
+
+- title: Writing
+  url: /writing/
+
 - title: About
-  url: /about.html
+  url: /#about
 
-- title: Source
-  url: https://github.com/patdryburgh/hitchens
-
-- title: Designer
-  url: http://patdryburgh.com
+- title: Contact
+  url: /#contact
+  cta: true

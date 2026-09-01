@@ -55,15 +55,28 @@
       {% include search.html %}
     {% endunless %}
 
-    {% include menu.html %}
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="site-footer__brand" href="{{ '/' | relative_url }}">Margherita Martorana</a>
+          <p>AI, data science, and semantic systems.</p>
+        </div>
 
-    {% unless site.hide_credits %}
-      <aside class="site-credits">
-        <p>
-          <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="http://jekyllrb.com">Jekyll</a></small>
-        </p>
-      </aside>
-    {% endunless %}
+        <div class="site-footer__links">
+          <a href="/#selected-projects">Work</a>
+          <a href="/#research-publications">Research</a>
+          <a href="/#contact">Contact</a>
+        </div>
+      </div>
+
+      {% unless site.hide_credits %}
+        <aside class="site-credits">
+          <p>
+            <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="http://jekyllrb.com">Jekyll</a></small>
+          </p>
+        </aside>
+      {% endunless %}
+    </footer>
 
   </body>
 </html>

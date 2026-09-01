@@ -20,14 +20,14 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(3rem, 9vw, 6.75rem);
-  line-height: .95;
+  font-size: clamp(2.35rem, 6.4vw, 5rem);
+  line-height: .98;
   margin: 0;
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.05;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.08;
   margin: 0;
 }
 
@@ -145,8 +145,8 @@ figcaption {
 
 .site-credits {
   color: $muted-text-color;
-  margin: 0 auto 2em;
-  padding: 0 2em;
+  margin: $space-md auto 0;
+  padding: 0 $space-md $space-md;
   text-align: center;
 }
 
