@@ -5,6 +5,7 @@ permalink: /publications/
 ---
 
 <div class="publication-page">
+  <p class="publication-page__intro"><a href="https://scholar.google.com/citations?user=_ba0GhwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">View Google Scholar profile -&gt;</a></p>
   <div class="publication-list">
     {% assign publications = site.data.publications | sort: "year" | reverse %}
     {% for publication in publications %}

@@ -40,16 +40,16 @@ layout: default
           semantic technologies and AI to make complex information more interoperable,
           reusable and actionable across domains.
         </p>
-        <div class="button-row" aria-label="Primary actions">
+        <div class="hero__actions" aria-label="Primary actions">
           <a class="button button--primary" href="{{ '/#selected-projects' | relative_url }}">Explore my work</a>
-          <a class="button button--secondary" href="{{ '/publications/' | relative_url }}">Publications</a>
-          <a class="button button--secondary" href="{{ '/assets/files/margherita-cv.pdf' | relative_url }}" download>Download CV</a>
+          <div class="hero__text-actions">
+            <a href="{{ '/publications/' | relative_url }}">Publications</a>
+            <a href="{{ '/assets/files/margherita-cv.pdf' | relative_url }}" download>Download CV</a>
+          </div>
         </div>
         <div class="link-row" aria-label="Profile links">
-          <a href="#contact">LinkedIn</a>
-          <a href="#contact">GitHub</a>
-          <a href="#contact">Google Scholar</a>
-          <a href="#contact">ORCID</a>
+          <a href="https://www.linkedin.com/in/margherita-martorana-phd-9300ab16b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=_ba0GhwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         </div>
       </div>
 
@@ -126,7 +126,10 @@ layout: default
         {% endfor %}
       </div>
 
-      <a class="section-link" href="{{ '/publications/' | relative_url }}">View all publications -&gt;</a>
+      <div class="section-link-row">
+        <a class="section-link" href="{{ '/publications/' | relative_url }}">View all publications -&gt;</a>
+        <a class="section-link" href="https://scholar.google.com/citations?user=_ba0GhwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar -&gt;</a>
+      </div>
     </div>
   </section>
 
@@ -227,16 +230,15 @@ layout: default
 
   <section class="section section--compact" id="contact" aria-labelledby="contact-title">
     <div class="container container--narrow">
-      <div class="section-heading">
+      <div class="section-heading contact-copy">
         <p class="eyebrow">Contact</p>
         <h2 id="contact-title">Contact</h2>
-        <p>Placeholder for email, LinkedIn, GitHub, and other professional contact links.</p>
+        <p>Interested in collaborating, discussing knowledge engineering or neurosymbolic AI, or exploring related work? You can find me on LinkedIn or reach me by email.</p>
       </div>
 
-      <div class="button-row">
-        <a class="button button--primary" href="mailto:{{ site.email }}">Email</a>
-        <a class="button button--secondary" href="#">LinkedIn</a>
-        <a class="button button--secondary" href="#">GitHub</a>
+      <div class="contact-links" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/margherita-martorana-phd-9300ab16b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <p><span>Email</span> hello [at] margheritamartorana [dot] com</p>
       </div>
     </div>
   </section>
