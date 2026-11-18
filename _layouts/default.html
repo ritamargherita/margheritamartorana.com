@@ -28,7 +28,12 @@
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?{{ site.time | date: '%s%N' }}">
-    {% if site.icon %}<link rel="apple-touch-icon" href="{{ site.icon | relative_url }}">{% endif %}
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+    {% if site.icon %}
+      <link rel="icon" type="image/png" sizes="512x512" href="{{ site.icon | relative_url }}">
+      <link rel="apple-touch-icon" href="{{ site.icon | relative_url }}">
+    {% endif %}
 
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: About
-description: Margherita Martorana's research in empirical AI, neurosymbolic systems and knowledge engineering.
+description: Margherita Martorana is an expert in knowledge engineering and AI, specializing in neurosymbolic AI.
 permalink: /about/
 ---
 
-I am an AI researcher with a PhD in Computer Science, working at the intersection of multimodal AI, neurosymbolic reasoning and knowledge engineering. I study how learned models can use explicit, structured knowledge to connect perception and language with reasoning and action.
+I am a Knowledge Engineering and AI expert with a PhD in Computer Science. My research focuses on neurosymbolic AI, especially combining multimodal models with ontologies and knowledge graphs to connect perception and language with grounded reasoning and action.
 
 My research includes a neurosymbolic framework combining multimodal language models and knowledge graphs for robotic perception and action, as well as semantic approaches to metadata enrichment and restricted-access data integration. This work brings together empirical AI research and knowledge engineering: models provide flexible interpretation, while ontologies and knowledge graphs make domain concepts explicit and reusable.
 
