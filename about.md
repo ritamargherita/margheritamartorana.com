@@ -1,17 +1,28 @@
 ---
-layout: post
+layout: page
 title: About
+description: Margherita Martorana's research in empirical AI, neurosymbolic systems and knowledge engineering.
+permalink: /about/
 ---
 
-Undoubtably one of the great minds of our time, Christopher Hitchens challenged his readers to think deeply on topics of politics, religion, war, and science. This Jekyll theme is designed in his memory.
+I am an AI researcher with a PhD in Computer Science, working at the intersection of multimodal AI, neurosymbolic reasoning and knowledge engineering. I study how learned models can use explicit, structured knowledge to connect perception and language with reasoning and action.
 
-<figure>
-  <img alt="Christopher Hitchens" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg" />
-  <figcaption>
-    Photo by Fri Tanke and licensed under the <a href="https://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution 3.0 Unported</a> license.
-  </figcaption>
-</figure>
+My research includes a neurosymbolic framework combining multimodal language models and knowledge graphs for robotic perception and action, as well as semantic approaches to metadata enrichment and restricted-access data integration. This work brings together empirical AI research and knowledge engineering: models provide flexible interpretation, while ontologies and knowledge graphs make domain concepts explicit and reusable.
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Christopher_Hitchens):
+At UMC Utrecht, I design knowledge architectures and semantic models for clinical operations. Previously, at Vrije Universiteit Amsterdam, I researched neurosymbolic AI and semantic data systems. Across these roles, I have worked with interdisciplinary teams on complex, real-world problems where reliable representations and clear communication matter.
 
->Christopher Eric Hitchens (13 April 1949 – 15 December 2011) was an Anglo-American author, columnist, essayist, orator, religious and literary critic, social critic, and journalist. Hitchens was the author, co-author, editor or co-editor of over 30 books, including five collections of essays on culture, politics and literature. A staple of public discourse, his confrontational style of debate made him both a lauded intellectual and a controversial public figure. He contributed to New Statesman, The Nation, The Weekly Standard, The Atlantic, London Review of Books, The Times Literary Supplement, Slate, Free Inquiry and Vanity Fair.
+## Background
+
+- **Current:** Knowledge and AI Expert, UMC Utrecht
+- **Previously:** Postdoctoral researcher in AI, Vrije Universiteit Amsterdam
+- **PhD:** Computer Science, Vrije Universiteit Amsterdam
+- **MSc:** Bioinformatics with Systems Biology, Birkbeck, University of London
+- **BSc:** Biological Sciences, Royal Veterinary College
+
+## Areas of work
+
+- Multimodal and neurosymbolic AI
+- Knowledge graphs, ontologies and semantic technologies
+- Robotics, perception and action
+- LLMs, metadata enrichment and semantic search
+- FAIR and restricted-access research data

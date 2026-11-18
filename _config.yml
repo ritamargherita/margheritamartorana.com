@@ -1,9 +1,9 @@
 # Site settings
 title: Margherita Martorana
 subtitle: >-
-  My corner of the internet for thoughts, research notes, and reflections on technology and science.
+  AI research grounded in knowledge engineering.
 description: >-
-  Margherita Martorana writes about AI, robotics, neurosymbolic systems, knowledge graphs, ontologies, LLMs, and multimodal models.
+  Margherita Martorana is an AI researcher working on neurosymbolic AI, multimodal models, knowledge graphs, robotics and knowledge engineering.
 
 baseurl: ""
 url: "https://margheritamartorana.com"
@@ -11,7 +11,7 @@ github_username: ritamargherita
 
 # Optional but useful for SEO plugins / themes
 tagline: >-
-  AI • Robotics • Neurosymbolic Systems • Knowledge Graphs • LLMs
+  AI Research • Neurosymbolic AI • Multimodal Models • Knowledge Engineering
 
 # Build settings
 markdown: kramdown
